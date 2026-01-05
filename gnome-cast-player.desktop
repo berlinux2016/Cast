@@ -1,0 +1,26 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GNOME Cast Player
+GenericName=Video Player
+Comment=Modern video player with Cast device support
+Comment[de]=Moderner Videoplayer mit Cast-Gerät Unterstützung
+Icon=gnome-cast-player
+Exec=gnome-cast-player %F
+Terminal=false
+Categories=AudioVideo;Video;Player;GTK;GNOME;
+MimeType=video/mp4;video/x-matroska;video/x-msvideo;video/quicktime;video/webm;video/x-flv;video/mpeg;application/x-mpegURL;
+Keywords=video;player;media;cast;stream;cast;
+StartupNotify=true
+StartupWMClass=org.gnome.CastPlayer
+Actions=OpenFile;OpenURL;
+
+[Desktop Action OpenFile]
+Name=Open File
+Name[de]=Datei öffnen
+Exec=gnome-cast-player
+
+[Desktop Action OpenURL]
+Name=Stream URL
+Name[de]=URL streamen
+Exec=gnome-cast-player --url
